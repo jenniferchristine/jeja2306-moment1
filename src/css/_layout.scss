@@ -3,19 +3,19 @@
 body {
     @include color($primary-color, $light_color);
     @include textlayout(left, 100% $font-stack);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 
     h1 { text-align: center; }
     h2 { font-size: 20px;text-align: center; }
     p { font: 100% $paragraph-text; }
 }
 
-section {
+#course-form {
     max-width: 95%;
-    width: 800px;
+    width: 200px;
+    justify-content: center;
     margin: 0 auto;
+    padding: 2em;
+    border: 1px $detailcolor solid;
 }
 
 main { padding: 8em 0 20em;}
@@ -32,7 +32,8 @@ footer {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     body { padding: 0; }
-    footer { justify-content: right;}
+    #course-form { width: 70%; }
+    footer { justify-content: left; }
 }
