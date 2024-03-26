@@ -46,3 +46,9 @@ $detailcolor: lighten($primary-color, 30%);
     padding: $padding;
     margin: $margin;
 }
+
+@mixin centergap($display, $justify, $gap) {
+    display: $display;
+    justify-content: $justify;
+    gap: $gap;
+}

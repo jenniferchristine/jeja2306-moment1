@@ -1,1 +1,38 @@
 @use 'base' as *;
+
+body {
+    @include color($primary-color, $light_color);
+    @include textlayout(left, 100% $font-stack);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    h1 { text-align: center; }
+    h2 { font-size: 20px;text-align: center; }
+    p { font: 100% $paragraph-text; }
+}
+
+section {
+    max-width: 95%;
+    width: 800px;
+    margin: 0 auto;
+}
+
+main { padding: 8em 0 20em;}
+
+footer { 
+    @include centergap(flex, center, 1em);
+    @include space(20px, auto 0 0);
+    align-self: center;
+    align-items: center;
+    margin: 0 auto;
+
+    img { @include size(40px, 15px); } 
+    p { font-size: 12px; }
+
+}
+
+@media only screen and (max-width: 800px) {
+    body { padding: 0; }
+    footer { justify-content: right;}
+}
