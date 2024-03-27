@@ -1,4 +1,4 @@
-5976
+5975
 91C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\dist\index.90c5fab6.js.map133560443632962526 0
 90C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\lightningcss133559608157852166 1
 86C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\src\images\bkgd3.webp133560402487636035 0
@@ -12,11 +12,10 @@
 143C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\create.js133559608159447898 0
 120C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\css-tree\lib\syntax\node\index-generate.js133559608164085496 0
 89C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\glob-parent133559602150690217 1
+88C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\dist\index.8c1c22dc.css133560445428032127 0
 100C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\@parcel\runtime-js\src133559608159846833 1
-88C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\dist\index.8c1c22dc.css133560443632856125 0
 125C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\csso\node_modules\css-tree\lib\lexer\generic.js133559608163945871 0
 117C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\caniuse-lite\data\features\css3-attr.js133559597665129105 0
-92C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\dist\index.8c1c22dc.css.map133560443632962526 0
 109C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\semver\ranges\max-satisfying.js133559597654248197 0
 104C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\nth-check\lib\esm\parse.js133559608156655367 0
 108C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\update-browserslist-db\LICENSE133559597635867347 0
@@ -41,7 +40,7 @@
 131C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\csso\node_modules\css-tree\lib\syntax\node\AnPlusB.js133559608163118085 0
 102C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\abortcontroller-polyfill133559597647087348 1
 107C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\svgo\plugins\removeViewBox.js133559608162220491 0
-69C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\dist133560443633101226 1
+69C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\dist133560445428062063 1
 129C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\@swc\helpers\cjs\_iterable_to_array_limit_loose.cjs133559597657140467 0
 124C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\caniuse-lite\data\features\childnode-remove.js133559597659514113 0
 95C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\boolbase\index.js133559608155658036 0
@@ -99,7 +98,7 @@
 90C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\@swc\counter133559597637921851 1
 98C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\htmlnano\index.d.cts133559608159697244 0
 106C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\@parcel\workers\src\child.js133559597642838707 0
-72C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\src\css133560441147655746 1
+72C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\src\css133560443712281614 1
 134C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\csso\node_modules\css-tree\lib\generator\token-before.js133559608165022997 0
 95C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\csso\node_modules133559608152483202 1
 97C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\fill-range\index.js133559597636774917 0
@@ -171,7 +170,6 @@
 108C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\@parcel\core\src\buildCache.js133559597655524790 0
 107C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\source-map\dist\source-map.js133559608159178632 0
 112C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\entities\lib\decode_codepoint.d.ts133559608158989126 0
-89C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\src\css\_animations.scss133560441457534045 0
 119C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\caniuse-lite\data\features\ol-reversed.js133559597672728791 0
 150C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\cleanupNumericValues.js133559608157961876 0
 85C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\is-json133559608156655367 1
@@ -184,7 +182,7 @@
 83C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\src\css\_base.scss133560437486303120 0
 120C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\utility-types\dist\functional-helpers.d.ts133559597649151825 0
 130C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\dom-serializer\node_modules\entities\lib\encode.d.ts133559608158480491 0
-85C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\src\css\_layout.scss133560443575463657 0
+85C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\src\css\_layout.scss133560445427457300 0
 101C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\normalize-path\index.js133559602150580509 0
 103C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\msgpackr-extract\index.js133559597640614659 0
 109C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\csso\node_modules\mdn-data\l10n133559608157203910 1
@@ -5975,3 +5973,4 @@
 105C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\.bin\update-browserslist-db133559597675710806 0
 109C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\node_modules\.bin\update-browserslist-db.cmd133559597675710806 0
 89C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\dist\bkdg3.76d6cb2a.webp133560399437079762 0
+92C:\Users\jenif\Desktop\dt208g\moment1\moment1.2\jeja2306-moment1\dist\index.8c1c22dc.css.map133560445428052073 0
