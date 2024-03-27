@@ -19,6 +19,7 @@ header {
 
 main { padding: 0 0 5em 0; }
 input, button { border-radius: 2px; }
+.field { background-color: rgb(231, 231, 231);}
 
 #course-form {
     @include width(400px, 95%);

@@ -17,29 +17,29 @@
         <form id="course-form">
             <div>
                 <label for="code">Kurskod</label>
-                <input type="text" name="code" id="code" placeholder="&nbsp;Kod för kurs" required>
+                <input type="text" class="field" name="code" id="code" placeholder="&nbsp;Kod för kurs" required>
             </div>
             <div>
                 <label for="name">Kursnamn</label>
-                <input type="text" name="name" id="name" placeholder="&nbsp;Namn på kurs" required>
+                <input type="text" class="field" name="name" id="name" placeholder="&nbsp;Namn på kurs" required>
             </div>
             <div>
                 <label for="progression">Progression</label>
-                <input type="text" name="progression" id="progression" placeholder="&nbsp;A, B eller C" required>
+                <input type="text" class="field" name="progression" id="progression" placeholder="&nbsp;A, B eller C" required>
             </div>
             <div>
                 <label for="syllabus">URL till kursplan</label>
-                <input type="text" name="syllabus" id="syllabus" placeholder="&nbsp;Länk till webbplats" required>
+                <input type="text" class="field" name="syllabus" id="syllabus" placeholder="&nbsp;Länk till webbplats" required>
             </div>
             <input type="button" class="resultBtn" id="addCourse" value="Lägg till kurs">
             <input type="reset" class="resultBtn" id="clearField" value="Rensa fält">
         </form>
         <form id="editForm">
             <label for="newCode">Gör ändring:</label>
-            <input type="text" name="newCode" id="newCode">
-            <input type="text" name="newName" id="newName">
-            <input type="text" name="newProgression" id="newProgression">
-            <input type="text" name="newSyllabus" id="newSyllabus">
+            <input type="text" class="field" name="newCode" id="newCode">
+            <input type="text" class="field" name="newName" id="newName">
+            <input type="text" class="field" name="newProgression" id="newProgression">
+            <input type="text" class="field" name="newSyllabus" id="newSyllabus">
             <input type="button" id="updateCourse" value="Uppdatera">
         </form>
         <div id="resultContainer"></div>
