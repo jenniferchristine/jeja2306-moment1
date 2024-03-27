@@ -11,14 +11,44 @@ body {
 
 #course-form {
     max-width: 95%;
-    width: 200px;
+    width: 250px;
     justify-content: center;
     margin: 0 auto;
     padding: 2em;
     border: 1px $detailcolor solid;
+    border-radius: 0.5em 0.5em 0 0;
+    background-color: lighten($primary-color, 8%);
+
+    div { 
+        margin: 0 0 30px 0;
+        border-top: 1px solid $detailcolor;
+
+        &:first-child { border-top: none; } }
+
+        input { 
+            width: 100%; 
+            height: 35px;
+            border: none;
+            margin-top: 10px;
+        }
 }
 
-main { padding: 8em 0 20em;}
+.result {
+    @extend #course-form;
+    background-color: $detailcolor;
+    border-radius: 0;
+    margin-top: 1.5em;
+    
+
+    button {
+        width: 100%; 
+        height: 35px;
+        border: none;
+        margin-top: 30px;
+    }
+}
+
+main { padding: 5em 0 5em;}
 
 footer { 
     @include centergap(flex, center, 1em);
@@ -34,6 +64,5 @@ footer {
 
 @media only screen and (max-width: 600px) {
     body { padding: 0; }
-    #course-form { width: 70%; }
-    footer { justify-content: left; }
+    #course-form { max-width: 70%; }
 }
