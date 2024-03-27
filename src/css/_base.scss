@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 
 $font-stack: 'Poppins';
 $paragraph-text: 'Inter';
@@ -16,6 +15,11 @@ $detailcolor: lighten($primary-color, 30%);
     height: $height;
 }
 
+@mixin width($width, $max) {
+    width: $width;
+    max-width: $max;
+}
+
 @mixin color($bkgd, $textcolor) {
     background-color: $bkgd;
     color: $textcolor;
@@ -26,20 +30,9 @@ $detailcolor: lighten($primary-color, 30%);
     font: $font;
 }
 
-@mixin textsize($size, $weight, $space) {
-    font-size: $size;
-    font-weight: $weight;
-    letter-spacing: $space;
-}
-
-@mixin align($align, $justify) {
-    align-items: $align;
+@mixin dispcont($display, $justify) {
+    display: $display;
     justify-content: $justify;
-}
-
-@mixin boxspace($box, $padding) {
-    box-sizing: $box;
-    padding: $padding;
 }
 
 @mixin space($padding, $margin) {
@@ -52,3 +45,10 @@ $detailcolor: lighten($primary-color, 30%);
     justify-content: $justify;
     gap: $gap;
 }
+
+@mixin hover($shadow, $cursor, $transform) {
+    box-shadow: $shadow;
+    cursor: $cursor;
+    transform: $transform;
+}
+

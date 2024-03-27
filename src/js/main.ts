@@ -96,6 +96,7 @@ addCourseBtn.addEventListener('click', () => { // lägga till kurs
         codeCondition.value = '';
         nameCondition.value = '';
         syllabusCondition.value = '';
+        progressionCondition.value = '';
     }
 
     saveResult(course); // spara i local storage
@@ -103,9 +104,9 @@ addCourseBtn.addEventListener('click', () => { // lägga till kurs
 });
 
 function editResult(index: number) : void {
-    let courses: CourseInfo[] = JSON.parse(localStorage.getItem('courses') || '[]'); // hämta från local
+    let courses: CourseInfo[] = JSON.parse(localStorage.getItem('courses') || '[]');
 
-    const codeInput = document.getElementById("newCode") as HTMLInputElement; // nya värden
+    const codeInput = document.getElementById("newCode") as HTMLInputElement;
     codeInput.value = courses[index].code;
     const nameInput = document.getElementById("newName") as HTMLInputElement;
     nameInput.value = courses[index].name;
@@ -113,9 +114,9 @@ function editResult(index: number) : void {
     progressionInput.value = courses[index].progression;
     const syllabusInput = document.getElementById("newSyllabus") as HTMLInputElement;
     syllabusInput.value = courses[index].syllabus;
-    // sätt in resten av föregående värden
 
-    const updateButton = document.getElementById("updateCourse");
+    const updateButton = document.getElementById("updateCourse") as HTMLButtonElement;
+    updateButton.classList.add('resultBtn');
     updateButton?.addEventListener("click", () => {
         const newCode: string = (document.getElementById("newCode") as HTMLInputElement).value;
         courses[index].code = newCode;
