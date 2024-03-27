@@ -48,8 +48,14 @@ function removeResult(course: CourseInfo) { // ta bort
 addCourseBtn.addEventListener('click', () => { // lägga till kurs
     const code = (document.getElementById('code') as HTMLInputElement).value;
     const name = (document.getElementById('name') as HTMLInputElement).value;
-    const progression = (document.getElementById('progression') as HTMLInputElement).value;
     const syllabus = (document.getElementById('syllabus') as HTMLInputElement).value;
+    const progressionCondition = (document.getElementById('progression') as HTMLInputElement); // hämtar input
+    const progression = progressionCondition.value.toUpperCase(); // stora eller små bokstäver
+
+    if (!["A", "B", "C"].includes(progression)) { // kontroll för bokstäver
+        alert("A, B eller C");
+        return; // avbryter om validering misslyckas
+    }
 
     const course: CourseInfo = { // egenskaper för objekt baserat på interface
         code: code,
