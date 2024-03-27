@@ -46,15 +46,24 @@ function removeResult(course: CourseInfo) { // ta bort
 }
 
 addCourseBtn.addEventListener('click', () => { // lägga till kurs
-    const code = (document.getElementById('code') as HTMLInputElement).value;
-    const name = (document.getElementById('name') as HTMLInputElement).value;
-    const syllabus = (document.getElementById('syllabus') as HTMLInputElement).value;
+    const codeCondition = (document.getElementById('code') as HTMLInputElement);
+    const nameCondition = (document.getElementById('name') as HTMLInputElement);
+    const syllabusCondition = (document.getElementById('syllabus') as HTMLInputElement);
     const progressionCondition = (document.getElementById('progression') as HTMLInputElement); // hämtar input
+
+    const code = codeCondition.value;
+    const name = nameCondition.value;
+    const syllabus = syllabusCondition.value;
     const progression = progressionCondition.value.toUpperCase(); // stora eller små bokstäver
 
-    if (!["A", "B", "C"].includes(progression)) { // kontroll för bokstäver
-        alert("A, B eller C");
+    if (!code || !name || !syllabus) { // kontroll för ifyllning
+        alert("Fyll i alla fält för att lägga till kurs");
         return; // avbryter om validering misslyckas
+    }
+
+    if (!["A", "B", "C"].includes(progression)) { // kontroll för bokstäver
+        alert("OBS: Du kan endast ange progression A, B eller C");
+        return;
     }
 
     const course: CourseInfo = { // egenskaper för objekt baserat på interface
@@ -64,9 +73,13 @@ addCourseBtn.addEventListener('click', () => { // lägga till kurs
         syllabus: syllabus
     };
 
+    //återställer fält endast om validering lyckas
+        codeCondition.value = '';
+        nameCondition.value = '';
+        syllabusCondition.value = '';
+
     saveResult(course); // spara i local storage
     displayResult(course); // visa resultat
-    (document.getElementById('course-form') as HTMLFormElement).reset();
 });
 
 window.addEventListener('load', () => { // ladda kurser vid reload
