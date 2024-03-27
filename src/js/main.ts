@@ -33,7 +33,7 @@ function displayResult(course: CourseInfo, count: number) : void { // visa kurs
     const resultDiv: HTMLDivElement = document.createElement('div');
     const editForm = document.getElementById('editForm') as HTMLDivElement;
     resultDiv.classList.add('result');
-    resultDiv.innerHTML = `Kurskod: ${course.code}<br>Kursnamn: ${course.name}<br>Progression: ${course.progression}<br>URL: ${course.syllabus}`;
+    resultDiv.innerHTML = `<b>Kurskod:</b> ${course.code}<br><b>Kursnamn:</b> ${course.name}<br><b>Progression:</b> ${course.progression}<br><b>URL:</b> ${course.syllabus}`;
 
     const clearResultBtn: HTMLButtonElement = document.createElement('button');
     clearResultBtn.classList.add('resultBtn');
