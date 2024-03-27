@@ -7,5 +7,7 @@
 >### Laboration i moment 1.2:
 >
 >:radio_button: Webbapplikation för att hantera kurser med kurskod, namn, progression och URL till kursplan.
+<br>
 >:radio_button: Applikationen är skriven i TypeScript
+<br>
 >:radio_button: localStorage använt för att lagra data
