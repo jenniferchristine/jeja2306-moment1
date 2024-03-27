@@ -29,15 +29,16 @@ addCourseBtn.addEventListener('click', () => {
     resultDiv.innerHTML = `Kurskod: ${code}<br>Kursnamn: ${name}<br>Progression: ${progression}<br>URL: ${syllabus}`;
 
     const clearResultBtn = document.createElement('button');
+    clearResultBtn.classList.add('eraseResult');
     clearResultBtn.textContent = 'Ta bort kurs';
 
     resultDiv.appendChild(clearResultBtn);
 
     clearResultBtn.addEventListener('click', () => {
-        container.innerHTML = '';
+        container.removeChild(resultDiv);
     });
-    
+
     container.appendChild(resultDiv);
-    });
+});
 
 
