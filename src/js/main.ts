@@ -1,4 +1,4 @@
-interface CourseInfo {
+interface CourseInfo { // interface för objekt, egenskaper
     code: string;
     name: string;
     progression: string;
@@ -20,11 +20,11 @@ addCourseBtn.addEventListener('click', () => {
         syllabus: syllabus
     };
 
-    localStorage.setItem('course', JSON.stringify(course));
-    (document.getElementById('course-form') as HTMLFormElement).reset();
+    localStorage.setItem('course', JSON.stringify(course)); // konverterar och lagrar course objekt till storage
+    (document.getElementById('course-form') as HTMLFormElement).reset(); // tömmer fälten
 
     const container = document.getElementById('resultContainer') as HTMLDivElement;
-    const resultDiv = document.createElement('div');
+    const resultDiv = document.createElement('div') as HTMLDivElement;
     resultDiv.classList.add('result');
     resultDiv.innerHTML = `Kurskod: ${code}<br>Kursnamn: ${name}<br>Progression: ${progression}<br>URL: ${syllabus}`;
 
@@ -34,12 +34,10 @@ addCourseBtn.addEventListener('click', () => {
     resultDiv.appendChild(clearResultBtn);
 
     clearResultBtn.addEventListener('click', () => {
-        const contentElement = document.getElementById('content');
-        contentElement!.textContent = '';
+        container.innerHTML = '';
+    });
+    
+    container.appendChild(resultDiv);
     });
 
-    container.appendChild(resultDiv);
-
-
-});
 
