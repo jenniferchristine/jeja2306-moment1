@@ -31,6 +31,7 @@ function loadResult() : void { // ladda tillägg
 function displayResult(course: CourseInfo, count: number) : void { // visa kurs
     const container = document.getElementById('resultContainer') as HTMLDivElement;
     const resultDiv: HTMLDivElement = document.createElement('div');
+    const editForm = document.getElementById('editForm') as HTMLDivElement;
     resultDiv.classList.add('result');
     resultDiv.innerHTML = `Kurskod: ${course.code}<br>Kursnamn: ${course.name}<br>Progression: ${course.progression}<br>URL: ${course.syllabus}`;
 
@@ -49,6 +50,7 @@ function displayResult(course: CourseInfo, count: number) : void { // visa kurs
 
     editBtn.addEventListener('click', () => {
         editResult(count);
+        editForm.style.display = 'block';
     });
 
     resultDiv.appendChild(editBtn);
@@ -101,9 +103,9 @@ addCourseBtn.addEventListener('click', () => { // lägga till kurs
 });
 
 function editResult(index: number) : void {
-    let courses: CourseInfo[] = JSON.parse(localStorage.getItem('courses') || '[]');
+    let courses: CourseInfo[] = JSON.parse(localStorage.getItem('courses') || '[]'); // hämta från local
 
-    const codeInput = document.getElementById("newCode") as HTMLInputElement;
+    const codeInput = document.getElementById("newCode") as HTMLInputElement; // nya värden
     codeInput.value = courses[index].code;
     const nameInput = document.getElementById("newName") as HTMLInputElement;
     nameInput.value = courses[index].name;
@@ -123,6 +125,9 @@ function editResult(index: number) : void {
         courses[index].progression = newProgression;
         const newSyllabus: string = (document.getElementById("newSyllabus") as HTMLInputElement).value;
         courses[index].syllabus = newSyllabus;
+
+        const editForm = document.getElementById('editForm') as HTMLDivElement;
+        editForm.style.display = 'none';
 
         localStorage.setItem('courses', JSON.stringify(courses));
 
