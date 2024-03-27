@@ -56,14 +56,14 @@ addCourseBtn.addEventListener('click', () => { // lägga till kurs
     const syllabus = syllabusCondition.value;
     const progression = progressionCondition.value.toUpperCase(); // stora eller små bokstäver
 
-    if (!code || !name || !syllabus) { // kontroll för ifyllning
-        alert("Fyll i alla fält för att lägga till kurs");
+    if (!["A", "B", "C"].includes(progression)) { // kontroll för bokstäver
+        alert("OBS: Du kan endast ange progression A, B eller C");
         return; // avbryter om validering misslyckas
     }
 
-    if (!["A", "B", "C"].includes(progression)) { // kontroll för bokstäver
-        alert("OBS: Du kan endast ange progression A, B eller C");
-        return;
+    if (!code || !name || !syllabus) { // kontroll för ifyllning
+        alert("Fyll i alla fält för att lägga till kurs");
+        return; 
     }
 
     const course: CourseInfo = { // egenskaper för objekt baserat på interface
@@ -73,11 +73,10 @@ addCourseBtn.addEventListener('click', () => { // lägga till kurs
         syllabus: syllabus
     };
 
-    if (["A", "B", "C"].includes(progression)) { // rensar endast fält vid lyckad validering
-        codeCondition.value = "";
-        nameCondition.value = "";
-        syllabusCondition.value = "";
-        progressionCondition.value = "";
+    if (["A", "B", "C"].includes(progression)) { // rensar endast fält om validering lyckats
+        codeCondition.value = '';
+        nameCondition.value = '';
+        syllabusCondition.value = '';
     }
 
     saveResult(course); // spara i local storage
