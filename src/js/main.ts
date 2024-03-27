@@ -73,10 +73,12 @@ addCourseBtn.addEventListener('click', () => { // lägga till kurs
         syllabus: syllabus
     };
 
-    //återställer fält endast om validering lyckas
-        codeCondition.value = '';
-        nameCondition.value = '';
-        syllabusCondition.value = '';
+    if (["A", "B", "C"].includes(progression)) { // rensar endast fält vid lyckad validering
+        codeCondition.value = "";
+        nameCondition.value = "";
+        syllabusCondition.value = "";
+        progressionCondition.value = "";
+    }
 
     saveResult(course); // spara i local storage
     displayResult(course); // visa resultat
