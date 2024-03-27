@@ -19,12 +19,16 @@ function saveResult(course: CourseInfo) : void { // spara till local storage
 
 function loadResult() : void { // ladda tillägg
     const courses: CourseInfo[] = JSON.parse(localStorage.getItem('courses') || '[]');
+    const container = document.getElementById("resultContainer") as HTMLDivElement;
+    container.innerHTML = "";
+    let count: number = 0;
     courses.forEach((course: CourseInfo) => { // loopar igenom result
-        displayResult(course); // anropa för visning
+        displayResult(course, count); // anropa för visning
+        count++;
     });
 }
 
-function displayResult(course: CourseInfo) : void { // visa kurs
+function displayResult(course: CourseInfo, count: number) : void { // visa kurs
     const container = document.getElementById('resultContainer') as HTMLDivElement;
     const resultDiv: HTMLDivElement = document.createElement('div');
     resultDiv.classList.add('result');
@@ -44,7 +48,7 @@ function displayResult(course: CourseInfo) : void { // visa kurs
     editBtn.textContent = "Redigera kurs";
 
     editBtn.addEventListener('click', () => {
-        editResult(course);
+        editResult(count);
     });
 
     resultDiv.appendChild(editBtn);
@@ -93,5 +97,35 @@ addCourseBtn.addEventListener('click', () => { // lägga till kurs
     }
 
     saveResult(course); // spara i local storage
-    displayResult(course); // visa resultat
+    loadResult(); // visa resultat
 });
+
+function editResult(index: number) : void {
+    let courses: CourseInfo[] = JSON.parse(localStorage.getItem('courses') || '[]');
+
+    const codeInput = document.getElementById("newCode") as HTMLInputElement;
+    codeInput.value = courses[index].code;
+    const nameInput = document.getElementById("newName") as HTMLInputElement;
+    nameInput.value = courses[index].name;
+    const progressionInput = document.getElementById("newProgression") as HTMLInputElement;
+    progressionInput.value = courses[index].progression;
+    const syllabusInput = document.getElementById("newSyllabus") as HTMLInputElement;
+    syllabusInput.value = courses[index].syllabus;
+    // sätt in resten av föregående värden
+
+    const updateButton = document.getElementById("updateCourse");
+    updateButton?.addEventListener("click", () => {
+        const newCode: string = (document.getElementById("newCode") as HTMLInputElement).value;
+        courses[index].code = newCode;
+        const newName: string = (document.getElementById("newName") as HTMLInputElement).value;
+        courses[index].name = newName;
+        const newProgression: string = (document.getElementById("newProgression") as HTMLInputElement).value;
+        courses[index].progression = newProgression;
+        const newSyllabus: string = (document.getElementById("newSyllabus") as HTMLInputElement).value;
+        courses[index].syllabus = newSyllabus;
+
+        localStorage.setItem('courses', JSON.stringify(courses));
+
+        loadResult();
+    });
+}

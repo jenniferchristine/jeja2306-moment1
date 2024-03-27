@@ -33,6 +33,14 @@ body {
         }
 }
 
+#editForm {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid grey;
+}
+
 .result {
     @extend #course-form;
     background-color: $detailcolor;
